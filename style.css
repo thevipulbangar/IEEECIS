@@ -1,0 +1,31 @@
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:#020617;color:#E0F2FE;font-family:'Inter',system-ui,-apple-system,sans-serif;overflow-x:hidden;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+h1,h2,h3,h4,h5,p,figure,blockquote{margin:0}
+ul,ol{margin:0;padding:0;list-style:none}
+img,canvas,svg,video{display:block;max-width:100%}
+button{font:inherit;color:inherit;background:none;border:none;padding:0;cursor:pointer}
+input,select,textarea{font:inherit;color:inherit}
+a{color:#7DD3FC;text-decoration:none;transition:color .2s ease}
+a:hover{color:#22D3EE}
+:focus-visible{outline:2px solid #22D3EE;outline-offset:3px;border-radius:2px}
+::selection{background:#1677FF;color:#fff}
+[data-noscroll]::-webkit-scrollbar{width:0;height:0;display:none}
+::-webkit-scrollbar{width:10px;height:10px}
+::-webkit-scrollbar-track{background:#020617}
+::-webkit-scrollbar-thumb{background:#12325f;border-radius:0}
+::-webkit-scrollbar-thumb:hover{background:#1677FF}
+@keyframes ftPulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.35;transform:scale(.72)}}
+@keyframes ftMarquee{from{transform:translate3d(0,0,0)}to{transform:translate3d(-50%,0,0)}}
+@keyframes ftDrawX{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@keyframes ftDrawY{from{transform:scaleY(0)}to{transform:scaleY(1)}}
+@keyframes ftSpin{to{transform:rotate(360deg)}}
+@keyframes ftFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+@keyframes ftScan{0%{transform:translateY(-100%)}100%{transform:translateY(900%)}}
+@keyframes ftBlink{0%,45%{opacity:1}50%,95%{opacity:.15}100%{opacity:1}}
+@keyframes ftBar{0%{transform:translateX(-100%)}100%{transform:translateX(400%)}}
+@keyframes ftFadeUp{from{opacity:0;transform:translate3d(0,18px,0)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion: reduce){
+html{scroll-behavior:auto}
+*,*::before,*::after{animation-duration:.001ms !important;animation-iteration-count:1 !important;transition-duration:.001ms !important}
+}
